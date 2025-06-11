@@ -1,4 +1,4 @@
-# vishell <p align="center"> <img src="https://i.pinimg.com/originals/a6/67/3a/a6673a6f9bf48588b4b9bbff57b59a21.gif" width="50"/> </p>
+vishell <p align="center"> <img src="https://i.pinimg.com/originals/a6/67/3a/a6673a6f9bf48588b4b9bbff57b59a21.gif" width="50"/> </p>
 
 ```vishell``` is my custom-built shell implemented in C, offering Unix-like functionality and process control. It supports command execution, I/O redirection, simple piping, and background process handling.
 
