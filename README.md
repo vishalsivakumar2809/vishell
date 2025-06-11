@@ -1,4 +1,4 @@
-# vishell 
+# vishell <p align="center"> <img src="https://i.pinimg.com/originals/a6/67/3a/a6673a6f9bf48588b4b9bbff57b59a21.gif" width="300"/> </p>
 
 ![vishell](https://i.pinimg.com/originals/a6/67/3a/a6673a6f9bf48588b4b9bbff57b59a21.gif)
 
