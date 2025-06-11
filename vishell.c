@@ -123,7 +123,6 @@ void initialize(){
  * @param str - The C string to tokenize 
  * @param delim - The C string containing delimiter character(s) 
  * @param argv - A char* array that will contain the tokenized strings
- * Make sure that you allocate enough space for the array.
  */
 int tokenize(char* str, const char* delim, char ** argv){
   char* token;
