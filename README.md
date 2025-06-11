@@ -1,9 +1,26 @@
 # vishell
 
 # About:
-```vishell``` is a custom-built Shell implemented in C. The program starts with ```initialize()``` which sets ```signal_callback_handler()``` to ensure the shell doesn't crash when CTRL+C or CTRL+V has been used. After doing so, an infinite loop begins, which looks for an input. This input is tokenized. After so, it checks whether the command is ```pwd```, ```cd```, or an ```exit``` call, and handles them accordingly. Otherwise, it handles input/output redirection, and uses ```fork()``` and ```pipe()``` to create and execute child processes to execute the command. 
+```vishell``` is my custom-built shell implemented in C, offering Unix-like functionality and process control. It supports command execution, I/O redirection, simple piping, and background process handling.
 
-Support currently exists for basic Unix commands such as ```cd```, ```pwd```, ```ls```, ```echo```, ```exit```.
+# Key Features:
+Built-in commands: ```cd```, ```pwd```, ```exit```
+Support for external commands like ```ls```, ```echo```, etc.
+Input (<) and output (>) redirection
+Basic piping (cmd1 | cmd2)
+Background process execution with &
+Signal handling for Ctrl+C (SIGINT) and Ctrl+Z (SIGTSTP) — prevents the shell itself from terminating or suspending
+
+# How it Works:
+The program begins with ```initialize()```, which sets up signal handlers via ```signal_callback_handler()``` to gracefully handle user interruptions.
+
+It enters an infinite loop to:
+1. Read and tokenize user input
+2. Handle built-in commands (```cd```, ```pwd```, ```exit```)
+3. Manage redirection (<, >) and piping (|)
+4. Spawn child processes using ```fork()``` and execute commands with ```execvp()``` or ```execve()```
+5. Track background and suspended processes
+
 # Demo:
 
 # References:
