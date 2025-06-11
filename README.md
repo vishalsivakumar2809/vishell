@@ -21,6 +21,8 @@ It enters an infinite loop to:
 5. Track background and suspended processes
 
 # Demo:
+https://github.com/user-attachments/assets/14f73b4a-248f-4743-b37e-d2c3fd824a84
+
 
 # References:
 https://man.archlinux.org/man/getcwd.2.en
